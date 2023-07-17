@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    overflow-x:hidden;
+    min-width:280px;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+.conteiner{
+    line-height: 25px;
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+} 
+.wraper{
+    display: grid;
+    grid-template-columns:340px 530px 150px;  
+    grid-gap: 40px;
+    padding-top: 80px;
+}
+.grin{
+    opacity: 0.4;
+}
+h1{
+    padding-top: 20px;
+    font:900 36px 'Roboto', sans-serif;
+}
+h2{
+    margin-bottom: 20px;
+    font: 900 22px 'Roboto', sans-serif;
+}
+h6{
+    margin-top: 10px;
+    font:400 16px 'Roboto', sans-serif;
+}
+p{
+    margin-bottom: 30px;
+}
+li{
+    font-size: 14px;
+    list-style: none;
+}
+.ul li{
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    width: 100%;
+    font-size: 14px;
+    margin-right: 40px;
+}
+.ul li .span{
+    display: inline-block;
+}
+.span a{
+    padding-right: 6px;
+}
+.span a:hover{
+color: #FF5C00;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn{
+    line-height: 21px;
+    font: 500 18px 'Roboto', sans-serif;
+    border-radius: 30px;
+    display: inline-block;
+    background-color:#FF5C00;
+    padding: 10px 30px;
+    transition: all 200ms ease-in-out;
+}
+.HD{
+    display: inline-block;
+    border-radius: 6px;
+    padding:3px 5px;
+    font: 400 12px 'Roboto', sans-serif;
+    border:2px solid #ffffff;
+}
+.btn:hover{
+    background-color: #FF3D00;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.numbers span{
+    margin-bottom: 10px;
+}
+.numbers a:hover{
+    color: #FF5C00;   
+}
+.numbers .reiting{
+    padding-top: 20px;
+    display: inline-block;
+    width: 140px;
+    color: #44C916;
+    font: 900 36px 'Roboto', sans-serif;
+}
+.o{
+    display: inline-block;
+    width: 140px;  
+}
+@media (max-width: 1024px){
+.conteiner{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.wraper{
+    grid-template-columns:250px 1fr 150px;  
+    grid-gap: 30px;
+}
+}
+@media (max-width: 768px){
+    .wraper{
+        grid-template-columns:1fr 150px;  
+        max-width:520px ;
+        margin-left:auto ;
+        margin-right: auto;
+    }
+.numbers{
+grid-row: 1 / 3;
+grid-column: 2;
+}
+}
+@media (max-width: 425px){
+    .wraper{
+        grid-template-columns:1fr ; 
+        max-width:100% ;
+    }
+    .numbers{
+        grid-row: unset;
+        grid-column: 1;
+        }
+}
